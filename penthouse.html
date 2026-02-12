@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Penthouse Suite | Aetheria Hospitality - Luxury Penthouse in Chikmagalur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Experience ultimate luxury in our premium Penthouse Suite at Aetheria Hospitality. Spacious accommodation with panoramic views in the heart of Chikmagalur." />
+    <meta name="keywords" content="Penthouse Chikmagalur, luxury penthouse, premium suite, Aetheria Hospitality penthouse" />
+    <meta name="author" content="Aetheria Hospitality" />
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <style>
+        :root {
+            --primary-color: #17232F;
+            --secondary-color: #17232F;
+            --accent-color: #2c5530;
+            --light-color: #f8f5f0;
+            --dark-color: #192436;
+            --text-color: #333333;
+            --text-light: #666666;
+            --border-radius: 12px;
+            --box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: #f9f9f9;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+        
+        /* Header */
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            padding: 15px 0;
+            transition: var(--transition);
+        }
+        
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color) !important;
+            letter-spacing: -0.5px;
+        }
+        
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            color: var(--dark-color) !important;
+            margin: 0 10px;
+            transition: var(--transition);
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: var(--secondary-color) !important;
+        }
+        
+        .navbar-nav .nav-link.active {
+            color: var(--secondary-color) !important;
+        }
+        
+        /* Hero Section */
+        .room-hero {
+            height: 60vh;
+            min-height: 500px;
+            background: linear-gradient(rgba(23, 35, 47, 0.85), rgba(23, 35, 47, 0.7)), url('images/p7.JPG');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .room-hero-content {
+            color: white;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .room-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .room-price {
+            font-size: 1.5rem;
+            color: var(--light-color);
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        
+        .room-hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .hero-feature i {
+            color: white;
+            font-size: 1.2rem;
+        }
+        
+        /* Booking Section */
+        .booking-section {
+            background: white;
+            padding: 40px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .booking-card {
+            background: var(--light-color);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .booking-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 8px;
+        }
+        
+        .form-control, .form-select {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 12px 15px;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: white;
+        }
+        
+        .form-control:focus, .form-select:focus {
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 0.2rem rgba(212, 165, 116, 0.25);
+        }
+        
+        .btn-primary {
+            background: var(--secondary-color);
+            border: none;
+            padding: 14px 30px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: var(--transition);
+            color: white;
+            font-size: 1.05rem;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(26, 71, 42, 0.15);
+        }
+        
+        /* Gallery Section */
+        .gallery-section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--secondary-color);
+        }
+        
+        .owl-carousel .item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .owl-carousel .item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .owl-carousel .item:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Features Section */
+        .features-section {
+            padding: 80px 0;
+            background: var(--light-color);
+        }
+        
+        .features-tabs {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .nav-tabs {
+            border-bottom: 2px solid var(--light-color);
+            padding: 0 20px;
+            background: var(--primary-color);
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+        }
+        
+        .nav-tabs .nav-link {
+            border: none;
+            color: Black !important;
+            font-weight: 500;
+            padding: 15px 25px;
+            border-radius: 0;
+            transition: var(--transition);
+        }
+        
+        .nav-tabs .nav-link:hover {
+            color: Black !important;
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .nav-tabs .nav-link.active {
+            color: var(--dark-color) !important;
+            background: white;
+            border-bottom: 3px solid var(--secondary-color);
+        }
+        
+        .tab-content {
+            padding: 40px;
+        }
+        
+        .feature-item {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .feature-item:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .feature-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .feature-item h4 i {
+            color: var(--secondary-color);
+        }
+        
+        .feature-item p {
+            color: var(--text-light);
+            margin-bottom: 0;
+            padding-left: 30px;
+        }
+        
+        /* Image Grid */
+        .image-grid {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .grid-item {
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .grid-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .grid-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Room Details */
+        .room-details {
+            padding: 80px 0;
+            background: var(--light-color);
+        }
+        
+        .detail-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 40px;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .detail-item {
+            margin-bottom: 30px;
+        }
+        
+        .detail-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--light-color);
+        }
+        
+        .detail-item ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .detail-item ul li {
+            padding: 8px 0;
+            color: var(--text-light);
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .detail-item ul li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+        
+        /* Luxury Features */
+        .luxury-features {
+            padding: 80px 0;
+            background: linear-gradient(rgba(23, 35, 47, 0.95), rgba(23, 35, 47, 0.9)), url('images/s1.JPG');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        
+        .luxury-feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            text-align: center;
+            height: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition);
+        }
+        
+        .luxury-feature-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--secondary-color);
+        }
+        
+        .luxury-feature-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--secondary-color);
+            font-size: 2rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .luxury-feature-card h4 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        .luxury-feature-card p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(rgba(23, 35, 47, 0.85), rgba(23, 35, 47, 0.7)), url('images/p1.JPG');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-content h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .cta-content p {
+            color: rgba(255,255,255,0.9);
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--secondary-color);
+            color: white;
+            padding: 12px 35px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: var(--transition);
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .btn-secondary:hover {
+            background: var(--secondary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        footer h5 {
+            color: white;
+            margin-bottom: 25px;
+            font-size: 1.2rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        footer h5:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--secondary-color);
+        }
+        
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        footer ul li {
+            margin-bottom: 10px;
+        }
+        
+        footer ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        footer ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .contact-detail i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 40px;
+            color: #aaa;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .room-hero {
+                height: 50vh;
+                min-height: 400px;
+            }
+            
+            .room-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .room-hero-features {
+                gap: 15px;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .tab-content {
+                padding: 25px;
+            }
+            
+            .nav-tabs .nav-link {
+                padding: 12px 15px;
+                font-size: 0.9rem;
+            }
+            
+            .booking-card {
+                padding: 20px;
+            }
+        }
+        
+        /* Simple Responsive Header */
+        .simple-header {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        
+        .simple-header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .simple-header .logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: #192436;
+            text-decoration: none;
+        }
+        
+        .simple-header .logo span {
+            color: #ae9d81;
+        }
+        
+        /* Desktop Menu */
+        .desktop-menu {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .desktop-menu a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 0;
+            position: relative;
+        }
+        
+        .desktop-menu a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #ae9d81;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        .desktop-menu a:hover:after {
+            width: 100%;
+        }
+        
+        .desktop-menu .book-btn {
+            background: #ae9d81;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        /* Mobile Hamburger Menu */
+        .hamburger-menu {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 4px;
+        }
+        
+        .hamburger-menu span {
+            width: 25px;
+            height: 2px;
+            background: #192436;
+            transition: 0.3s;
+        }
+        
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+        
+        .mobile-menu a {
+            display: block;
+            padding: 15px;
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+            font-weight: 500;
+        }
+        
+        .mobile-menu a:hover {
+            background: #f8f5f0;
+            padding-left: 20px;
+        }
+        
+        .mobile-menu .book-btn {
+            background: #ae9d81;
+            color: white;
+            text-align: center;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 991px) {
+            .desktop-menu {
+                display: none;
+            }
+            
+            .hamburger-menu {
+                display: flex;
+            }
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="simple-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                THE AETHERIA <span>HOSPITALITY</span>
+            </a>
+            
+            <div class="desktop-menu">
+                <a href="index.html">Home</a>
+                <a href="about1.html">Service Apartment</a>
+                <a href="about.html">Estate Retreat</a>
+                <a href="food_order.php">Ava's Cafe</a>
+                <a href="contact.html">Contact</a>
+               
+            </div>
+            
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="about1.html">Service Apartment</a>
+            <a href="about.html">Estate Retreat</a>
+            <a href="food_order.php">Ava's Cafe</a>
+            <a href="contact.html">Contact</a>
+            <a href="#booking" class="book-btn">Book Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="room-hero">
+        <div class="container">
+            <div class="room-hero-content" data-aos="fade-up">
+                
+                <h1>Penthouse Suite</h1>
+                <p class="lead mb-4">Experience ultimate luxury in our exclusive penthouse with panoramic views, premium amenities, and unparalleled comfort in the heart of Chikmagalur.</p>
+                
+                <div class="room-price">
+                    <i class="fas fa-rupee-sign me-2"></i>Starting from ₹3,800 per night
+                </div>
+                
+                <div class="room-hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-users"></i>
+                        <span>Up to 3 Guests</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-bed"></i>
+                        <span>Master Bedroom + Lounge</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-window-maximize"></i>
+                        <span>Panoramic Views</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-star"></i>
+                        <span>Premium Amenities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <!--section class="booking-section" id="booking">
+        <div class="container">
+            <div class="booking-card" data-aos="fade-up">
+                <h3><i class="fas fa-calendar-check me-2"></i> Book Your Stay</h3>
+                <form method="post" action="BOOK_room_new_apmt.php" enctype="multipart/form-data">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <label for="checkin_date" class="form-label">Check-in Date</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                <input type="date" id="checkin_date" class="form-control" name="from_date" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <label for="checkout_date" class="form-label">Check-out Date</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                <input type="date" id="checkout_date" class="form-control" name="to_date" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <label for="adults" class="form-label">Number of Guests</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-user-friends"></i></span>
+                                <select id="adults" class="form-select" name="team" required>
+                                    <option value="">Select Guests</option>
+                                    <option value="1">1 Adult</option>
+                                    <option value="2">2 Adults</option>
+                                    <option value="3">3 Adults</option>
+                                    <option value="4">4 Adults</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 d-flex align-items-end">
+                            <input type="hidden" name="room_type" value="penthouse">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-check me-2"></i> Reserve Now
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section-->
+    <section class="booking-section py-5 bg-light" id="booking">
+    <div class="container">
+        <div class="booking-card shadow-lg rounded-3 p-4 p-md-5 bg-white" data-aos="fade-up">
+            <div class="text-center mb-4">
+                <h3 class="h2 fw-bold text-dark mb-3">
+                    <i class="fas fa-calendar-check text-primary me-3"></i>Book Your Stay
+                </h3>
+                <p class="text-muted mb-0">Secure your preferred dates with our instant reservation system.</p>
+            </div>
+            
+            <form method="post" action="BOOK_room_new_apmt.php" enctype="multipart/form-data">
+                <input type="hidden" name="room_type" value="delux_2bhk">
+                
+                <div class="d-grid gap-2 col-12 col-md-6 mx-auto">
+                    <a href="https://aetheriaserviceapartments.bookingjini.in/" 
+                       class="btn btn-primary btn-lg fw-semibold py-3 rounded-pill">
+                        <i class="fas fa-check-circle me-3"></i>Reserve Now
+                    </a>
+                </div>
+                
+                <p class="text-center text-muted small mt-4 mb-0">
+                    <i class="fas fa-lock me-2"></i>Secure booking · Instant confirmation
+                </p>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Penthouse Gallery</h2>
+                <p class="text-muted mt-3">Explore our luxurious penthouse through these stunning visuals</p>
+            </div>
+            
+            <div class="owl-carousel owl-theme" data-aos="fade-up" data-aos-delay="100">
+                <div class="item">
+                    <img src="images/p1.JPG" alt="Penthouse Living Area">
+                </div>
+                <div class="item">
+                    <img src="images/p2.JPG" alt="Master Bedroom">
+                </div>
+                <div class="item">
+                    <img src="images/p3.JPG" alt="Dining Space">
+                </div>
+                <div class="item">
+                    <img src="images/p4.JPG" alt="Modern Kitchen">
+                </div>
+                <div class="item">
+                    <img src="images/p5.JPG" alt="Relaxation Area">
+                </div>
+                <div class="item">
+                    <img src="images/p6.JPG" alt="Bathroom Facilities">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Penthouse Features</h2>
+                <p class="text-muted mt-3">Experience luxury and exclusivity in every detail</p>
+            </div>
+            
+            <div class="features-tabs" data-aos="fade-up" data-aos-delay="100">
+                <ul class="nav nav-tabs" id="penthouseTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="spaces-tab" data-bs-toggle="tab" data-bs-target="#spaces" type="button" role="tab">
+                            <i class="fas fa-expand-alt me-2"></i> Living Spaces
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="amenities-tab" data-bs-toggle="tab" data-bs-target="#amenities" type="button" role="tab">
+                            <i class="fas fa-crown me-2"></i> Premium Amenities
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="location-tab" data-bs-toggle="tab" data-bs-target="#location" type="button" role="tab">
+                            <i class="fas fa-map-marker-alt me-2"></i> Location Benefits
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="exclusive-tab" data-bs-toggle="tab" data-bs-target="#exclusive" type="button" role="tab">
+                            <i class="fas fa-star me-2"></i> Exclusive Features
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="penthouseTabsContent">
+                    <div class="tab-pane fade show active" id="spaces" role="tabpanel">
+                        <div class="feature-item">
+                            <h4><i class="fas fa-couch"></i> Spacious Living Area</h4>
+                            <p>Open-concept living space with premium furnishings, entertainment system, and elegant decor.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-bed"></i> Master Suite</h4>
+                            <p>Luxurious master bedroom with king-size bed, walk-in closet, and private balcony with city views.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-utensils"></i> Gourmet Kitchen</h4>
+                            <p>Fully equipped modern kitchen with premium appliances, breakfast bar, and dining area.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="amenities" role="tabpanel">
+                        <div class="feature-item">
+                            <h4><i class="fas fa-tv"></i> Entertainment System</h4>
+                            <p>Large smart TV with streaming services and premium sound system for ultimate entertainment.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-wifi"></i> High-Speed Connectivity</h4>
+                            <p>Dedicated high-speed WiFi for both work and entertainment needs.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-bath"></i> Luxury Bathroom</h4>
+                            <p>Modern bathroom with rain shower, premium toiletries, and designer fixtures.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="location" role="tabtabpanel">
+                        <div class="feature-item">
+                            <h4><i class="fas fa-bus"></i> Prime Transportation Access</h4>
+                            <p>Just 200 meters from KSRTC Bus Stand for convenient travel connections.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-city"></i> Central Location</h4>
+                            <p>Located in the heart of the city with easy access to shopping, dining, and entertainment.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-car"></i> Private Parking</h4>
+                            <p>Dedicated secure parking space exclusively for penthouse guests.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="exclusive" role="tabpanel">
+                        <div class="feature-item">
+                            <h4><i class="fas fa-window-maximize"></i> Panoramic Views</h4>
+                            <p>Floor-to-ceiling windows offering stunning views of Chikmagalur's landscape.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-gamepad"></i> Entertainment Options</h4>
+                            <p>Premium indoor games and entertainment facilities for relaxation.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-concierge-bell"></i> Priority Services</h4>
+                            <p>Exclusive access to priority check-in, housekeeping, and concierge services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Grid -->
+    <section class="image-grid">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Penthouse Interior</h2>
+                <p class="text-muted mt-3">A closer look at the luxurious interiors of our penthouse suite</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="grid-item">
+                        <img src="images/p3.jpeg" alt="Additional Amenities">
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="grid-item">
+                        <img src="images/p4.jpeg" alt="Additional Amenities">
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="grid-item">
+                        <img src="images/p5.jpeg" alt="Additional Amenities">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="grid-item">
+                        <img src="images/h1.JPG" alt="Living Room View">
+                    </div>
+                </div>
+               
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="grid-item">
+                        <img src="images/7G0A8914-HDR.JPG" alt="Dining Space">
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="grid-item">
+                        <img src="images/t9.JPG" alt="Relaxation Area">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="grid-item">
+                        <img src="images/t8.JPG" alt="Additional Amenities">
+                    </div>
+                </div>
+                
+                
+                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="grid-item">
+                        <img src="images/p1.jpeg" alt="Additional Amenities">
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="grid-item">
+                        <img src="images/p2.jpeg" alt="Additional Amenities">
+                    </div>
+                </div>
+                 
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Features -->
+    <section class="luxury-features">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 style="color: white;">Luxury Highlights</h2>
+                <p class="mt-3" style="color: rgba(255,255,255,0.8)">Experience the pinnacle of comfort and sophistication</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="luxury-feature-card">
+                        <div class="luxury-feature-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4>Panoramic Views</h4>
+                        <p>Enjoy breathtaking views of Chikmagalur from your private penthouse balcony.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="luxury-feature-card">
+                        <div class="luxury-feature-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h4>Premium Furnishings</h4>
+                        <p>Elegantly designed interiors with high-end furniture and luxurious finishes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="luxury-feature-card">
+                        <div class="luxury-feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Privacy & Security</h4>
+                        <p>Exclusive access and 24/7 security ensure complete privacy and safety.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Details -->
+    <section class="room-details">
+        <div class="container">
+            <div class="detail-card" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="detail-item">
+                            <h4>Penthouse Specifications</h4>
+                            <ul>
+                                
+                                <li>Bedrooms: 1 Master Suite</li>
+                                <li>Bathrooms: 2 Modern Bathrooms</li>
+                                
+                                <li>Kitchen: Fully Equipped Gourmet Kitchen</li>
+                                <li>Maximum Occupancy: 3 Guests</li>
+                                <li>View: Panoramic City Views</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="detail-item">
+                            <h4>Exclusive Services</h4>
+                            <ul>
+                               <li>Check-in : 2:00 PM & Check-Out : 12:00 PM</li>
+                                <li>Dedicated Concierge Service</li>
+                                <li>Priority Housekeeping</li>
+                                <li>Private Parking Space</li>
+                                <li>24/7 Security & Support</li>
+                                <li>Complimentary Welcome Amenities</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready for an Exclusive Experience?</h2>
+                <p>Book our luxurious Penthouse Suite today and indulge in premium hospitality with panoramic views in beautiful Chikmagalur.</p>
+                <a href="https://aetheriaserviceapartments.bookingjini.in/" class="btn btn-secondary me-3">
+                    <i class="fas fa-calendar-alt me-2"></i> Book Now
+                </a>
+                <a href="contact.html" class="btn btn-secondary">
+                    <i class="fas fa-phone-alt me-2"></i> Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>THE AETHERIA HOSPITALITY</h5>
+                    <p class="mt-3">Experience luxury and tranquility at our premium service apartments and lakefront cottages in beautiful Chikmagalur.</p>
+                     <div class="social-icons mt-4">
+              <a href="https://www.facebook.com/people/The-Aetheria-Service-Apartment/61574034495872/?mibextid=wwXIfr&rdid=sr6s1SDkEVuGVgf3&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BgA1t17jM%2F%3Fmibextid%3DwwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/accounts/login/?next=%2Ftheaetheriaservice%2F&source=omni_redirect" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://wa.me/917019454382" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about1.html">Service Apartment</a></li>
+                        <li><a href="about.html">Estate Retreat</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Information</h5>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Contact Info</h5>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <span>(+91) 7019454382</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <span>aetheriahospitality@gmail.com</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Chikmagalur, Karnataka</span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 THE AETHERIA HOSPITALITY. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/917019454382" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Initialize Owl Carousel
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+        
+        // Set default dates for booking form
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set check-in date to tomorrow
+            const today = new Date();
+            const tomorrow = new Date(today);
+            tomorrow.setDate(today.getDate() + 1);
+            
+            const dayAfterTomorrow = new Date(today);
+            dayAfterTomorrow.setDate(today.getDate() + 2);
+            
+            // Format dates as YYYY-MM-DD
+            const formatDate = (date) => {
+                const year = date.getFullYear();
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const day = String(date.getDate()).padStart(2, '0');
+                return `${year}-${month}-${day}`;
+            };
+            
+            // Set default dates
+            const checkinInput = document.getElementById('checkin_date');
+            const checkoutInput = document.getElementById('checkout_date');
+            
+            if (checkinInput) {
+                checkinInput.min = formatDate(tomorrow);
+                checkinInput.value = formatDate(tomorrow);
+            }
+            
+            if (checkoutInput) {
+                checkoutInput.min = formatDate(dayAfterTomorrow);
+                checkoutInput.value = formatDate(dayAfterTomorrow);
+            }
+            
+            // Update checkout min date when checkin changes
+            if (checkinInput && checkoutInput) {
+                checkinInput.addEventListener('change', function() {
+                    const checkinDate = new Date(this.value);
+                    const nextDay = new Date(checkinDate);
+                    nextDay.setDate(checkinDate.getDate() + 1);
+                    checkoutInput.min = formatDate(nextDay);
+                    
+                    if (new Date(checkoutInput.value) < nextDay) {
+                        checkoutInput.value = formatDate(nextDay);
+                    }
+                });
+            }
+        });
+        
+        // Header toggle script
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgerMenu = document.getElementById('hamburgerMenu');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            if (hamburgerMenu && mobileMenu) {
+                hamburgerMenu.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('active');
+                    // Animate hamburger to X
+                    const spans = this.querySelectorAll('span');
+                    spans[0].style.transform = mobileMenu.classList.contains('active') ? 'rotate(45deg) translate(5px, 5px)' : 'none';
+                    spans[1].style.opacity = mobileMenu.classList.contains('active') ? '0' : '1';
+                    spans[2].style.transform = mobileMenu.classList.contains('active') ? 'rotate(-45deg) translate(7px, -6px)' : 'none';
+                });
+                
+                // Close menu when clicking a link
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileMenu.classList.remove('active');
+                        hamburgerMenu.querySelectorAll('span').forEach(span => {
+                            span.style.transform = 'none';
+                            span.style.opacity = '1';
+                        });
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

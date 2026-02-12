@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Standard family room | Aetheria Hospitality - Luxury Stay in Chikmagalur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Experience luxury in our Deluxe Family Room at Aetheria Estate Retreat. Spacious accommodation with premium amenities for families in Chikmagalur." />
+    <meta name="keywords" content="Deluxe Family Room Chikmagalur, family accommodation, luxury family stay, Aetheria estate retreat" />
+    <meta name="author" content="Aetheria Hospitality" />
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- In head section -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+<!-- Before closing body tag -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Initialize datepicker with icon trigger
+        $('#checkin_date').datepicker({
+            format: 'yyyy-mm-dd',
+            autoclose: true,
+            todayHighlight: true,
+            startDate: '+1d'
+        }).on('show', function() {
+            // Position the datepicker properly
+            $('.datepicker').css('top', $(this).offset().top + 40);
+        });
+        
+        $('#checkout_date').datepicker({
+            format: 'yyyy-mm-dd',
+            autoclose: true,
+            todayHighlight: true,
+            startDate: '+2d'
+        });
+        
+        // Set default dates
+        var tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        var dayAfter = new Date();
+        dayAfter.setDate(dayAfter.getDate() + 2);
+        
+        $('#checkin_date').datepicker('setDate', tomorrow);
+        $('#checkout_date').datepicker('setDate', dayAfter);
+    });
+</script>
+
+    <style>
+        :root {
+            --primary-color: #17232F;
+            --secondary-color: #17232F;
+            --accent-color: #2c5530;
+            --light-color: #f8f5f0;
+            --dark-color: #192436;
+            --text-color: #333333;
+            --text-light: #666666;
+            --border-radius: 12px;
+            --box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: #f9f9f9;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+        
+        /* Header */
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            padding: 15px 0;
+            transition: var(--transition);
+        }
+        
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color) !important;
+            letter-spacing: -0.5px;
+        }
+        
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            color: var(--dark-color) !important;
+            margin: 0 10px;
+            transition: var(--transition);
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: var(--secondary-color) !important;
+        }
+        
+        .navbar-nav .nav-link.active {
+            color: var(--secondary-color) !important;
+        }
+        
+        /* Hero Section */
+        .room-hero {
+            height: 60vh;
+            min-height: 500px;
+            background: linear-gradient(rgba(23, 35, 47, 0.85), rgba(23, 35, 47, 0.7)), url('images/Capture1.PNG');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .room-hero-content {
+            color: white;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .room-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .room-price {
+            font-size: 1.5rem;
+            color: var(--light-color);
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        
+        .room-hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .hero-feature i {
+            color: white;
+            font-size: 1.2rem;
+        }
+        
+        /* Booking Form */
+        .booking-section {
+            background: white;
+            padding: 40px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .booking-card {
+            background: var(--light-color);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .booking-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 8px;
+        }
+        
+        .form-control, .form-select {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 12px 15px;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: white;
+        }
+        
+        .form-control:focus, .form-select:focus {
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 0.2rem rgba(212, 165, 116, 0.25);
+        }
+        
+        .btn-primary {
+            background: var(--secondary-color);
+            border: none;
+            padding: 14px 30px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: var(--transition);
+            color: white;
+            font-size: 1.05rem;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(26, 71, 42, 0.15);
+        }
+        
+        /* Gallery Section */
+        .gallery-section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--secondary-color);
+        }
+        
+        .owl-carousel .item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        .owl-carousel .item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .owl-carousel .item:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Features Section */
+        .features-section {
+            padding: 80px 0;
+            background: var(--light-color);
+        }
+        
+        .features-tabs {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .nav-tabs {
+            border-bottom: 2px solid var(--light-color);
+            padding: 0 20px;
+            background: var(--primary-color);
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+        }
+        
+        .nav-tabs .nav-link {
+            border: none;
+            color: #212529;
+            font-weight: 500;
+            padding: 15px 25px;
+            border-radius: 0;
+            transition: var(--transition);
+        }
+        
+        .nav-tabs .nav-link:hover {
+            color: var(--secondary-color);
+            background: rgba(255,255,255,0.05);
+        }
+        
+        .nav-tabs .nav-link.active {
+            color: var(--secondary-color);
+            background: white;
+            border-bottom: 3px solid var(--secondary-color);
+        }
+        
+        .tab-content {
+            padding: 40px;
+        }
+        
+        .feature-item {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .feature-item:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .feature-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .feature-item h4 i {
+            color: var(--secondary-color);
+        }
+        
+        .feature-item p {
+            color: var(--text-light);
+            margin-bottom: 0;
+            padding-left: 30px;
+        }
+        
+        /* Amenities Grid */
+        .amenities-grid {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .amenity-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            height: 100%;
+            border: 1px solid #f0f0f0;
+        }
+        
+        .amenity-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-color: var(--secondary-color);
+        }
+        
+        .amenity-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--light-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+        
+        .amenity-card h5 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .amenity-card p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+        
+          .whatsapp-float:hover {
+        background: linear-gradient(135deg, #128C7E, #0d6e5a);
+        transform: scale(1.1) rotate(10deg);
+        box-shadow: 0 12px 25px rgba(37, 211, 102, 0.5);
+      }
+      
+        .whatsapp-float {
+        position: fixed;
+        width: 65px;
+        height: 65px;
+        bottom: 40px;
+        right: 40px;
+        background: linear-gradient(135deg, #25d366, #128C7E);
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 32px;
+        box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition);
+      }
+        
+        /* Room Details */
+        .room-details {
+            padding: 80px 0;
+            background: var(--light-color);
+        }
+        
+        .detail-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 40px;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .detail-item {
+            margin-bottom: 30px;
+        }
+        
+        .detail-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--light-color);
+        }
+        
+        .detail-item ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .detail-item ul li {
+            padding: 8px 0;
+            color: var(--text-light);
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .detail-item ul li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(rgba(23, 35, 47, 0.85), rgba(23, 35, 47, 0.7)), url('images/delux_family_room.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-content h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .cta-content p {
+            color: rgba(255,255,255,0.9);
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--secondary-color);
+            color: white;
+            padding: 12px 35px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: var(--transition);
+            display: inline-block;
+        }
+        
+        .btn-secondary:hover {
+            background: var(--secondary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        footer h5 {
+            color: white;
+            margin-bottom: 25px;
+            font-size: 1.2rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        footer h5:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--secondary-color);
+        }
+        
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        footer ul li {
+            margin-bottom: 10px;
+        }
+        
+        footer ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        footer ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .contact-detail i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 40px;
+            color: #aaa;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .room-hero {
+                height: 50vh;
+                min-height: 400px;
+            }
+            
+            .room-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .room-hero-features {
+                gap: 15px;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .tab-content {
+                padding: 25px;
+            }
+            
+            .nav-tabs .nav-link {
+                padding: 12px 15px;
+                font-size: 0.9rem;
+            }
+            
+            .booking-card {
+                padding: 20px;
+            }
+        }
+         
+         /* SCRIPT FOR HEADER */
+        /* Simple Responsive Header */
+.simple-header {
+    background: white;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 20px;
+}
+
+.simple-header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.simple-header .logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #192436;
+    text-decoration: none;
+}
+
+.simple-header .logo span {
+    color: #ae9d81;
+}
+
+/* Desktop Menu */
+.desktop-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.desktop-menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 0;
+    position: relative;
+}
+
+.desktop-menu a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ae9d81;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.desktop-menu a:hover:after {
+    width: 100%;
+}
+
+.desktop-menu .book-btn {
+    background: #ae9d81;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Mobile Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 2px;
+    background: #192436;
+    transition: 0.3s;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 500;
+}
+
+.mobile-menu a:hover {
+    background: #f8f5f0;
+    padding-left: 20px;
+}
+
+.mobile-menu .book-btn {
+    background: #ae9d81;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .desktop-menu {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: flex;
+    }
+}
+    </style>
+    
+     <script>
+        //SCRIPT FOR HEADER
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburgerMenu = document.getElementById('hamburgerMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    if (hamburgerMenu && mobileMenu) {
+        hamburgerMenu.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active');
+            // Animate hamburger to X
+            const spans = this.querySelectorAll('span');
+            spans[0].style.transform = mobileMenu.classList.contains('active') ? 'rotate(45deg) translate(5px, 5px)' : 'none';
+            spans[1].style.opacity = mobileMenu.classList.contains('active') ? '0' : '1';
+            spans[2].style.transform = mobileMenu.classList.contains('active') ? 'rotate(-45deg) translate(7px, -6px)' : 'none';
+        });
+        
+        // Close menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                hamburgerMenu.querySelectorAll('span').forEach(span => {
+                    span.style.transform = 'none';
+                    span.style.opacity = '1';
+                });
+            });
+        });
+    }
+});
+</script>
+</head>
+<body>
+    <!-- Navigation -->
+ <header class="simple-header">
+    <div class="container">
+        <a href="index.html" class="logo">
+            THE AETHERIA <span>HOSPITALITY</span>
+        </a>
+        
+        <div class="desktop-menu">
+            <a href="index.html">Home</a>
+            <a href="about1.html">Service Apartment</a>
+            <a href="about.html">Estate Retreat</a>
+            <a href="food_order.php">Ava's Cafe</a>
+            <a href="contact.html">Contact</a>
+           
+        </div>
+        
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about1.html">Service Apartment</a>
+        <a href="about.html">Estate Retreat</a>
+        <a href="food_order.php">Ava's Cafe</a>
+        <a href="contact.html">Contact</a>
+        
+    </div>
+</header>
+
+
+
+    <!-- Hero Section -->
+    <section class="room-hero">
+        <div class="container">
+            <div class="room-hero-content" data-aos="fade-up">
+                
+              
+                <h1>Standard family room</h1>
+                <p class="lead mb-4">Experience luxury and comfort in our spacious family accommodation, designed for memorable family getaways in Chikmagalur.</p>
+                
+                <div class="room-price">
+                    <i class="fas fa-rupee-sign me-2"></i>3,000 per night (for 2 people)
+                </div>
+                
+                <div class="room-hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-users"></i>
+                        <span>Up to 2 Guests</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-bed"></i>
+                        <span>King Bed + Extra Beds</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-bowl-food"></i>
+                        <span>Breakfast Included</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-wifi"></i>
+                        <span>Free WiFi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <!--section class="booking-section">
+        <div class="container">
+            <div class="booking-card" data-aos="fade-up">
+                <h3><i class="fas fa-calendar-check me-2"></i> Book Your Stay</h3>
+                <form method="post" action="BOOK_room_new.php" enctype="multipart/form-data">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <label for="checkin_date" class="form-label">Check-in Date</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                <input type="date" id="checkin_date" class="form-control" name="from_date" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <label for="checkout_date" class="form-label">Check-out Date</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                                <input type="date" id="checkout_date" class="form-control" name="to_date" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <label for="adults" class="form-label">Number of Guests</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-user-friends"></i></span>
+                                <select id="adults" class="form-select" name="team" required>
+                                    <option value="">Select Guests</option>
+                                    <option value="1">1 Adult</option>
+                                    <option value="2">2 Adults</option>
+                                    <option value="3">3 Adults</option>
+                                    <option value="4">4 Adults</option>
+                                    <option value="5">5 Adults</option>
+                                    <option value="6">6 Adults</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 d-flex align-items-end">
+                            <input type="hidden" name="room_type" value="Deluxe">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-check me-2"></i> Reserve Now
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section-->
+
+<section class="booking-section py-5 bg-light" id="booking">
+    <div class="container">
+        <div class="booking-card shadow-lg rounded-3 p-4 p-md-5 bg-white" data-aos="fade-up">
+            <div class="text-center mb-4">
+                <h3 class="h2 fw-bold text-dark mb-3">
+                    <i class="fas fa-calendar-check text-primary me-3"></i>Book Your Stay
+                </h3>
+                <p class="text-muted mb-0">Secure your preferred dates with our instant reservation system.</p>
+            </div>
+            
+            <form method="post" action="BOOK_room_new_apmt.php" enctype="multipart/form-data">
+                <input type="hidden" name="room_type" value="delux_2bhk">
+                
+                <div class="d-grid gap-2 col-12 col-md-6 mx-auto">
+                    <a href="https://aetheriaserviceapartments.bookingjini.in/" 
+                       class="btn btn-primary btn-lg fw-semibold py-3 rounded-pill">
+                        <i class="fas fa-check-circle me-3"></i>Reserve Now
+                    </a>
+                </div>
+                
+                <p class="text-center text-muted small mt-4 mb-0">
+                    <i class="fas fa-lock me-2"></i>Secure booking · Instant confirmation
+                </p>
+            </form>
+        </div>
+    </div>
+</section>  
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Room Features</h2>
+                <p class="text-muted mt-3">Everything you need for a comfortable family stay</p>
+            </div>
+            
+            <div class="features-tabs" data-aos="fade-up" data-aos-delay="100">
+                <ul class="nav nav-tabs" id="roomTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="bedroom-tab" data-bs-toggle="tab" data-bs-target="#bedroom" type="button" role="tab">
+                            <i class="fas fa-bed me-2"></i> Bedroom
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="bathroom-tab" data-bs-toggle="tab" data-bs-target="#bathroom" type="button" role="tab">
+                            <i class="fas fa-bath me-2"></i> Bathroom
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="amenities-tab" data-bs-toggle="tab" data-bs-target="#amenities" type="button" role="tab">
+                            <i class="fas fa-star me-2"></i> Amenities
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="view-tab" data-bs-toggle="tab" data-bs-target="#view" type="button" role="tab">
+                            <i class="fas fa-mountain me-2"></i> View
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="roomTabsContent">
+                    <div class="tab-pane fade show active" id="bedroom" role="tabpanel">
+                        <div class="feature-item">
+                            <h4><i class="fas fa-bed"></i> Premium Sleeping Arrangements</h4>
+                            <p>King-size bed with plush linens, cozy blankets, and soft pillows. Additional rollaway beds available for children.</p>
+                        </div>
+                       
+                        <div class="feature-item">
+                            <h4><i class="fas fa-palette"></i> Elegant Decor</h4>
+                            <p>The room is adorned with warm lighting, elegant artwork, and a soothing color palette to create a relaxing and inviting atmosphere.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="bathroom" role="tabpanel">
+                        <div class="feature-item">
+                            <h4><i class="fas fa-shower"></i> Modern Bathroom</h4>
+                            <p>En-suite bathroom with family-friendly features including bathtub, separate shower, and ample counter space.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-towel"></i> Premium Toiletries</h4>
+                            <p>High-quality towels, bathrobes, and eco-friendly toiletries provided for all guests.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-wind"></i> Ventilation</h4>
+                            <p>Well-ventilated with exhaust fan and natural light through frosted windows.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="amenities" role="tabpanel">
+                        
+                        <div class="feature-item">
+                            <h4><i class="fas fa-tv"></i> Entertainment</h4>
+                            <p>Flat-screen TV with satellite channels and streaming capabilities.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-wifi"></i> Connectivity</h4>
+                            <p>High-speed WiFi throughout the room for work and entertainment.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="view" role="tabpanel">
+                        <div class="feature-item">
+                            <h4><i class="fas fa-mountain"></i> Estate Views</h4>
+                            <p>Large windows offering stunning views of the coffee estate and surrounding hills.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4><i class="fas fa-sun"></i> Natural Light</h4>
+                            <p>Strategically placed windows to maximize natural light while maintaining privacy.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+  <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Room Gallery</h2>
+                <p class="text-muted mt-3">Take a virtual tour of our Deluxe Family Room</p>
+            </div>
+            
+            <div class="owl-carousel owl-theme" data-aos="fade-up" data-aos-delay="100">
+                <!--div class="item">
+                    <img src="images/IMG_1992.jpeg" alt="Deluxe Family Room Interior">
+                </div-->
+                <div class="item">
+                    <img src="images/Capture1.PNG" alt="Family Room Bed Area">
+                </div>
+                <div class="item">
+                    <img src="images/Capture2.PNG" alt="Room Seating Area">
+                </div>
+                <div class="item">
+                    <img src="images/IMG_1994.jpeg" alt="Bathroom View">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Room Details -->
+    <section class="room-details">
+        <div class="container">
+            <div class="detail-card" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="detail-item">
+                            <h4>Room Specifications</h4>
+                            <ul>
+                                
+                                <li>Bed Type: 1 King Bed +  Single Beds</li>
+                                <li>Maximum Occupancy: 2 Adults</li>
+                                <li>View: Coffee Estate & Garden</li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="detail-item">
+                            <h4>Policies & Services</h4>
+                            <ul>
+                                <li>Check-in : 2:00 PM & Check-Out : 12:00 PM</li>
+                                <li>Free Parking Available</li>
+                                <li>Complimentary Breakfast Included</li>
+                                <li>Housekeeping Service Daily</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready for a Family Getaway?</h2>
+                <p>Book your Deluxe Family Room today and create unforgettable memories in the heart of Chikmagalur's coffee country.</p>
+                <a href="https://aetheriaserviceapartments.bookingjini.in/" class="btn btn-secondary me-3">
+                    <i class="fas fa-calendar-alt me-2"></i> Book Now
+                </a>
+                <a href="contact.html" class="btn btn-secondary">
+                    <i class="fas fa-phone-alt me-2"></i> Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+ <footer class="footer-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4 mb-4">
+            <h4 class="mb-4">THE AETHERIA HOSPITALITY</h4>
+            <p>Experience luxury and tranquility at our premium service apartments and lakefront cottages in beautiful Chikmagalur. Where comfort meets unparalleled natural beauty.</p>
+            <div class="social-icons mt-4">
+              <a href="https://www.facebook.com/people/The-Aetheria-Service-Apartment/61574034495872/?mibextid=wwXIfr&rdid=sr6s1SDkEVuGVgf3&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BgA1t17jM%2F%3Fmibextid%3DwwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/accounts/login/?next=%2Ftheaetheriaservice%2F&source=omni_redirect" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://wa.me/917019454382" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5 class="mb-4">Quick Links</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about1.html">Service Apartment</a></li>  
+              <li><a href="about.html">Estate Retreat</a></li>
+              <li><a href="food_order.php">Ava's Cafe</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="mb-4">Information</h5>
+            <ul>
+              <li><a href="terms_conditions.html">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="mb-4">Contact Info</h5>
+            <div class="mb-3">
+              <i class="fas fa-phone me-2"></i>
+              <span>(+91) 7019454382</span>
+            </div>
+            <div class="mb-3">
+              <i class="fas fa-envelope me-2"></i>
+              <span>aetheriahospitality@gmail.com</span>
+            </div>
+            <div>
+              <i class="fas fa-map-marker-alt me-2"></i>
+              <span>Chikmagalur, Karnataka</span>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-4 footer-bottom">
+          <div class="col-md-12 text-center">
+            <p>&copy; 2024 THE AETHERIA HOSPITALITY. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/917019454382" class="whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    
+    <script src="js/aos.js"></script>
+    
+    <script src="js/bootstrap-datepicker.js"></script> 
+    <script src="js/jquery.timepicker.min.js"></script> 
+
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Initialize Owl Carousel
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+        
+        // Set default dates for booking form
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set check-in date to tomorrow
+            const today = new Date();
+            const tomorrow = new Date(today);
+            tomorrow.setDate(today.getDate() + 1);
+            
+            const dayAfterTomorrow = new Date(today);
+            dayAfterTomorrow.setDate(today.getDate() + 2);
+            
+            // Format dates as YYYY-MM-DD
+            const formatDate = (date) => {
+                return date.toISOString().split('T')[0];
+            };
+            
+            // Set default dates
+            const checkinInput = document.getElementById('checkin_date');
+            const checkoutInput = document.getElementById('checkout_date');
+            
+            if (checkinInput) {
+                checkinInput.min = formatDate(tomorrow);
+                checkinInput.value = formatDate(tomorrow);
+            }
+            
+            if (checkoutInput) {
+                checkoutInput.min = formatDate(dayAfterTomorrow);
+                checkoutInput.value = formatDate(dayAfterTomorrow);
+            }
+            
+            // Form validation
+            const form = document.querySelector('form');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    const name = document.getElementById('name')?.value.trim();
+                    const phone = document.getElementById('phone')?.value.trim();
+                    const email = document.getElementById('email')?.value.trim();
+                    const message = document.getElementById('message')?.value.trim();
+                    
+                    // Add your validation logic here
+                    return true;
+                });
+            }
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
